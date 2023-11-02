@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Alocação de Professores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./curso.js"></script>
+  </head>
+  <body>
+    <h1>Gerenciamento de Cursos</h1>
+
+    <!-- Formulário para salvar um curso por nome -->
+    <h2>Salvar um Curso</h2>
+    <form id="saveCourseForm">
+      <input type="text" id="courseName" placeholder="Nome do Curso" />
+      <button type="submit" onclick="saveCourse(event)">Salvar Curso</button>
+    </form>
+
+    <!-- Formulário para atualizar um curso por ID e nome -->
+    <h2>Atualizar Curso</h2>
+    <form id="updateCourseForm">
+      <input type="text" id="updateCourseId" placeholder="ID do Curso" />
+      <input
+        type="text"
+        id="updateCourseName"
+        placeholder="Novo Nome do Curso"
+      />
+      <button type="button" id="updateCourseButton" onclick="updateCourse()">
+        Atualizar Curso
+      </button>
+    </form>
+
+    <!-- Formulário para deletar um curso por ID -->
+    <h2>Deletar Curso</h2>
+    <form id="deleteCourseForm">
+      <input
+        type="text"
+        id="deleteCourseId"
+        placeholder="ID do Curso a Deletar"
+      />
+      <button type="button" id="deleteCourseButton" onclick="deleteCourse()">
+        Deletar Curso
+      </button>
+    </form>
+
+    <!-- Formulário para listar os cursos -->
+    <h2>Listar Cursos</h2>
+    <button id="listCoursesButton" onclick="listCourses()">
+      Listar Cursos
+    </button>
+    <p id="courseList"></p>
+  </body>
+</html>
