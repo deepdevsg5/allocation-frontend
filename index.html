@@ -1,13 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <title>Projeto Qualiti</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+    <div class="topnav" id="myTopnav">
+            <a href="home.html" target="myIframe" class="active">Home</a>
+            <a href="./crudprof/prof.html" target="myIframe">Professor</a>
+            <a href="./cruddepto/depto.html" target="myIframe">Departamento</a>
+            <a href="./crudcurso/curso.html" target="myIframe">Curso</a>
+            <a href="./crudaloc/aloc.html" target="myIframe">Alocação</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+
+    <div class="container">
+            <p></p>
+            <iframe class="responsive-iframe" name="myIframe" scrolling="yes" src="./home.html"></iframe>
+    </div>
+  
+</body>
 </html>
